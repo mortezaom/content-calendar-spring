@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="auth">
+            <authState>
+              <option name="type" value="BEARER" />
+            </authState>
+          </option>
+          <option name="id" value="94cbbc91-9c17-4ab6-b433-2093b1f01ee8" />
+          <option name="name" value="New Collection" />
+          <option name="requests">
+            <list>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Morteza&quot;,&#10;  &quot;description&quot;: &quot;Hello&quot;,&#10;  &quot;status&quot;: 2,&#10;  &quot;type&quot;: 2,&#10;  &quot;dateCreated&quot;: &quot;2023-10-25&quot;,&#10;  &quot;url&quot;: &quot;google.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="caa7f33b-8857-42fa-ad15-33d4b7fe9baf" />
+                <option name="method" value="GET" />
+                <option name="name" value="New Request" />
+                <option name="url" value="http://localhost:8888/api/content" />
+              </requestState>
+            </list>
+          </option>
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="$PROJECT_DIR$/.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="1c4fb4a4-3b0d-48ae-8607-8dcdb0712848" />
+  </component>
+</project>

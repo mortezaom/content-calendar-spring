@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title>Content Calendar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<nav th:fragment="header">
+    <!-- set 10 persent height for div -->
+    <div class="flex items-center justify-between flex-wrap bg-teal-500 p-6" style="height: 10vh">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-semibold text-xl tracking-tight">Content Calendar</span>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" href="/">
+                    Refresh
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<footer th:fragment="footer">
+    <!--    create a tailwind css footer with links-->
+    <div class="flex items-center justify-between flex-wrap bg-teal-900 p-6" style="height: 10vh">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-semibold text-xl tracking-tight">@Spring Boot</span>
+        </div>
+    </div>
+</footer>
+</html>
