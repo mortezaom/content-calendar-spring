@@ -16,7 +16,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Morteza&quot;,&#10;  &quot;description&quot;: &quot;Hello&quot;,&#10;  &quot;status&quot;: 2,&#10;  &quot;type&quot;: 2,&#10;  &quot;dateCreated&quot;: &quot;2023-10-25&quot;,&#10;  &quot;url&quot;: &quot;google.com&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Morteza&quot;,&#10;  &quot;description&quot;: &quot;Hello&quot;,&#10;  &quot;status&quot;: 2,&#10;  &quot;type&quot;: 2,&#10;  &quot;dateCreated&quot;: &quot;2023-10-01&quot;,&#10;  &quot;url&quot;: &quot;google.com&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -29,9 +29,29 @@
                   </list>
                 </option>
                 <option name="id" value="caa7f33b-8857-42fa-ad15-33d4b7fe9baf" />
-                <option name="method" value="GET" />
+                <option name="method" value="POST" />
                 <option name="name" value="New Request" />
-                <option name="url" value="http://localhost:8888/api/content" />
+                <option name="url" value="http://localhost:8888/api/content/" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Morteza&quot;,&#10;  &quot;description&quot;: &quot;Hello&quot;,&#10;  &quot;status&quot;: 2,&#10;  &quot;type&quot;: 2,&#10;  &quot;dateCreated&quot;: &quot;2023-10-25&quot;,&#10;  &quot;url&quot;: &quot;google.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="158f67b8-00c8-4602-96a4-9f5286bf8cb0" />
+                <option name="method" value="GET" />
+                <option name="name" value="New Request 1" />
+                <option name="url" value="http://localhost:8888/api/content/grouped" />
               </requestState>
             </list>
           </option>

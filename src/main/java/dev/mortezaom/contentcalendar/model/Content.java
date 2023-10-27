@@ -17,13 +17,17 @@ public class Content {
     private String title;
 
     private String description;
-    private Status status;
-    private Type type;
     private LocalDate dateCreated;
     private LocalDate dateUpdated;
-    private String url;
 
     public Content() {
+    }
+
+    public Content(String title, String description, LocalDate dateCreated, LocalDate dateUpdated) {
+        this.title = title;
+        this.description = description;
+        this.dateCreated = dateCreated;
+        this.dateUpdated = dateUpdated;
     }
 
     public Long getId() {
@@ -50,21 +54,6 @@ public class Content {
         this.description = description;
     }
 
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
-    }
 
     public LocalDate getDateCreated() {
         return dateCreated;
@@ -82,11 +71,8 @@ public class Content {
         this.dateUpdated = dateUpdated;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
+    @Override
+    public String toString() {
+        return id.toString();
     }
 }

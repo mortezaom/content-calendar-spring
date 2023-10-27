@@ -1,7 +1,9 @@
 package dev.mortezaom.contentcalendar.controller;
 
 import dev.mortezaom.contentcalendar.model.Content;
+import dev.mortezaom.contentcalendar.model.Day;
 import dev.mortezaom.contentcalendar.repository.ContentRepository;
+import dev.mortezaom.contentcalendar.service.CalenderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -14,14 +16,21 @@ import java.util.List;
 public class ContentController {
 
     private final ContentRepository repository;
+    private final CalenderService service;
 
-    public ContentController(ContentRepository repository) {
+    public ContentController(ContentRepository repository, CalenderService service) {
         this.repository = repository;
+        this.service = service;
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     public List<Content> findAll() {
         return repository.findAll();
+    }
+
+    @GetMapping("/grouped")
+    public List<List<Day>> findGrouped() {
+        return service.contentsList(repository.findAll());
     }
 
     @GetMapping("/{id}")
@@ -35,7 +44,7 @@ public class ContentController {
         repository.save(body);
     }
 
-    @PostMapping("")
+    @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public Content createOne(@RequestBody Content content) {
         return repository.save(content);

@@ -4,6 +4,38 @@
     <meta charset="UTF-8"/>
     <title>Content Calendar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        *::-webkit-scrollbar {
+            width: 10px;
+        }
+        *::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        *::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        *::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left:0;
+        }
+    </style>
 </head>
 <nav th:fragment="header">
     <!-- set 10 persent height for div -->
@@ -14,7 +46,7 @@
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
                 <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" href="/">
-                    Refresh
+                    Home
                 </a>
             </div>
         </div>
