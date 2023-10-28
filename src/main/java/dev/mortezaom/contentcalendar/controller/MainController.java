@@ -3,12 +3,13 @@ package dev.mortezaom.contentcalendar.controller;
 import dev.mortezaom.contentcalendar.model.Content;
 import dev.mortezaom.contentcalendar.repository.ContentRepository;
 import dev.mortezaom.contentcalendar.service.CalenderService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDate;
 
-@RestController
+@Controller
 @RequestMapping("/")
 public class MainController {
 
